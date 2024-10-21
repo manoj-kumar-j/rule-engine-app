@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rule Engine - Evaluate User Eligibility</h1>
+        </header>
+
+        <main>
+            <form id="evaluationForm" class="form">
+                <label for="ruleString">Enter Rule:</label>
+                <input id="ruleString" class="input" placeholder="RuleID" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" class="input" placeholder="Enter Age" required>
+
+                <label for="income">Income:</label>
+                <input type="number" id="income" class="input" placeholder="Enter Income" required>
+
+                <label for="spend">Monthly Spend:</label>
+                <input type="number" id="spend" class="input" placeholder="Enter Monthly Spend" required>
+
+                <label for="department">Department:</label>
+                <input type="text" id="department" class="input" placeholder="Enter Department" required>
+
+                <button type="submit" class="button">Evaluate Rule</button>
+            </form>
+
+            <h2 id="result" class="result"></h2>
+        </main>
+    </div>
+</body>
+</html>
